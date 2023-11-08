@@ -14,7 +14,7 @@ class CrearArchivo extends Component
     protected $rules = [
         'titulo' => 'required|min:10|max:140',
         'tipo_documento' => 'required',
-        'archivo'=>'required',
+        'archivo'=>'required|pdf|max:5120',
     ];
 
     public function save()
