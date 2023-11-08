@@ -39,9 +39,9 @@
                                     <th class="py-3 px-6 text-center">Acciones</th>
                                 </tr>
                             </thead>
-                            @if ($news->count())
+                            @if ($normas->count())
                                 <tbody class="text-gray-600 text-sm font-light">
-                                    @foreach ($news as $new)
+                                    @foreach ($normas as $new)
                                         <tr class="border-b border-gray-200 hover:bg-gray-100">
                                             <td class="py-3 px-6 text-left whitespace-nowrap">
                                                 <div class="flex items-center">
@@ -94,9 +94,9 @@
                         @include('components.alerta-busqueda')
                         @endif
                         <div class="bg-gray-200">
-                            @if ($news->hasPages())
+                            @if ($normas->hasPages())
                                 <div class="px-6 py-3 ">
-                                    {{ $news->links() }}
+                                    {{ $normas->links() }}
                                 </div>
                             @endif
                         </div>
