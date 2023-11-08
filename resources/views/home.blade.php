@@ -38,7 +38,7 @@
             </div>
 
             <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-recursos">
-                <div class=" text-white text-lg font-bold">Recursos Escolares</div>
+                <div class=" text-white text-lg font-bold">Recursos</div>
             </div>
 
             <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-normas">

@@ -94,7 +94,7 @@ background-color: #640202;
     }
 
     .card-recursos{
-        background-image:linear-gradient(45deg, #1a1a1b, #b2080883 100%), url("/public/img/fondo_card/utiles.png");
+        background-image:linear-gradient(45deg, #1a1a1b, #b2080883 100%), url("/public/img/fondo_card/recursos.png");
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
