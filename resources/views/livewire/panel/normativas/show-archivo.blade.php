@@ -10,7 +10,7 @@
                     {{-- seccion de busqueda --}}
 
                     <div class="container mx-auto">
-                        <div class="text-gray-100 text-center mt-10 text-lg font-bold uppercase bg-encabezado py-1">Noticias</div>
+                        <div class="text-gray-100 text-center mt-10 text-lg font-bold uppercase bg-encabezado py-1">Centro de Carga de Archivos</div>
                     </div>
                       <div class="flex justify-around bg-gray-200">
 
