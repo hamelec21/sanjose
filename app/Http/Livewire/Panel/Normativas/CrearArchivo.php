@@ -35,6 +35,9 @@ class CrearArchivo extends Component
     }
     public function render()
     {
-        return view('livewire.panel.normativas.crear-archivo');
+        $normas = Normativa::buscar($this->search)
+        ->orderBy('id','Desc')
+        ->paginate(10);
+        return view('livewire.panel.normativas.crear-archivo',compact('normas'));
     }
 }
