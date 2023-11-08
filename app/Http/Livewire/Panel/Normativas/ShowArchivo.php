@@ -22,6 +22,9 @@ class ShowArchivo extends Component
     }
     public function render()
     {
-        return view('livewire.panel.normativas.show-archivo');
+        $normas = Normativa::buscar($this->search)
+        ->orderBy('id','Desc')
+        ->paginate(10);
+        return view('livewire.panel.normativas.show-archivo',compact('normas'));
     }
 }
