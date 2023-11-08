@@ -35,6 +35,14 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="{{ route('show-archivo') }}"
+                        class="px-4 py-1 flex items-center space-x-4 rounded-md text-gray-600 group">
+                        <i class="fas fa-chevron-circle-right text-gray-600 group-hover:text-cyan-600"></i>
+                        <span class=" text-gray-600 group-hover:text-cyan-600 ">Carga de Archivos</span>
+                    </a>
+                </li>
+
             </ul>
 
 

@@ -32,8 +32,13 @@ Route::middleware([
 | Rutas del panel Administrativo
 |--------------------------------------------------------------------------
 */
+
+
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-//mostrar todas las noticias
+
+    //carga de arvivos
+Route::get('/panel/normativas/show-archivo',\App\Http\Livewire\Panel\Normativas\ShowArchivo::class)->name('show-archivo');
+ //mostrar todas las noticias
 Route::get('/panel/noticia/show-noticia',\App\Http\Livewire\Panel\Noticia\ShowNoticia::class)->name('show-noticia');
 //crear
 Route::get('/panel/noticia/crear-noticia',\App\Http\Livewire\Panel\Noticia\CrearNoticia::class)->name('crear-noticia');
@@ -46,6 +51,7 @@ Route::get('/panel/comunicado/show-comunicado',\App\Http\Livewire\Panel\Comunica
 Route::get('/panel/comunicado/crear-comunicado',\App\Http\Livewire\Panel\Comunicado\CrearComunicado::class)->name('crear-comunicado');
 //editar comunicado
 Route::get('/panel/noticia/editar-comunicado/{comunico}',\App\Http\Livewire\Panel\Comunicado\EditarComunicado::class)->name('editar-comunicado');
+
 });
 /*
 |--------------------------------------------------------------------------
@@ -209,7 +215,10 @@ Route::get('/personal_de_servicio', function () {
     return view('personal_de_servicio');
 });
 
-//rutas descargas de normativas
+//rutas centro descargas de normativas  y utiles escolares
+
+
+
 
 
 
