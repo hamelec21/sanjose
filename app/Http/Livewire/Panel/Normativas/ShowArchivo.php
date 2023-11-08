@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Panel\Normativas;
 
 use App\Models\Normativa;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithPagination;
 class ShowArchivo extends Component
@@ -20,6 +21,13 @@ class ShowArchivo extends Component
     {
         Normativa::destroy($id);
     }
+
+    
+
+
+
+
+
     public function render()
     {
         $normas = Normativa::buscar($this->search)
