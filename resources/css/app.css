@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+
+.bg-header
+{
+background-color: #d1d5db;
+}
+
+.bg-footer
+{
+background-color: #640202;
+}
+
+/*Estilos personalizados*/
+
+/*secciones del home*/
+.bg-studio{
+    background-color: #142433;
+    }
+
+    .bg-new{
+        background-color: #bdecb6;
+        }
+
+    .bg-heaer-proyecto
+    {
+        background-color: #41bb00;
+    }
+
+
+    .bg-sidebar
+    {
+        background-color: #0f1120;
+    }
+
+    .bg-encabezado
+     {
+        background-color:#0652e9;
+     }
+
+     .text-jr
+     {
+        color:#0652e9 ;
+     }
+
+     .text-dev
+     {
+        color:#62e1e9 ;
+     }
+
+
+    /*botones de acciones*/
+
+    .btn-eliminar {
+        @apply  bg-red-600 hover:bg-red-500  text-white py-2 px-4 rounded-xl shadow-lg cursor-pointer;
+    }
+    .btn-editar {
+        @apply  bg-amber-500 hover:bg-amber-400  text-white py-2 px-4 rounded-xl shadow-lg cursor-pointer ;
+    }
+    .btn-agregar{
+        @apply  bg-gradient-to-r from-sky-600 to-cyan-400 font-bold text-white py-2 px-4 rounded-xl shadow-lg cursor-pointer;
+    }
+    .btn-ver {
+        @apply  bg-green-600 hover:bg-green-500  text-white py-2 px-4 rounded-xl shadow-lg cursor-pointer ;
+    }
+
+
+    /*
+        fondos para las card informativas
+    */
+
+    .card-calendario{
+         background-image:linear-gradient(45deg, #1a1a1b, #b2080883 100%), url("/public/img/fondo_card/calendario.png");
+         background-position: center; /* Center the image */
+         background-repeat: no-repeat; /* Do not repeat the image */
+         background-size: cover; /* Resize the background image to cover the entire container */
+         height: 380px;
+     }
+
+     .card-normas{
+        background-image:linear-gradient(45deg, #1a1a1b, #b2080883 100%), url("/public/img/fondo_card/normas.png");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        height: 380px;
+    }
+
+    .card-utiles{
+        background-image:linear-gradient(45deg, #1a1a1b, #b2080883 100%), url("/public/img/fondo_card/utiles.png");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        height: 380px;
+    }
+
+    .card-recursos{
+        background-image:linear-gradient(45deg, #1a1a1b, #b2080883 100%), url("/public/img/fondo_card/utiles.png");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        height: 380px;
+    }
+
+
+
+
+
+
+@tailwind utilities;
