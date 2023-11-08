@@ -14,7 +14,7 @@ class CrearArchivo extends Component
     protected $rules = [
         'titulo' => 'required|min:10|max:140',
         'tipo_documento' => 'required',
-        'archivo'=>'required|pdf|max:5120',
+        'archivo'=>'required|max:5120',
     ];
 
     public function save()
@@ -31,7 +31,7 @@ class CrearArchivo extends Component
         $this->reset(['titulo','tipo_documento','archivo']);
         $this->emit('render');
         $this->emit('insert', 'El Registro fue Creado Exitosamente');
-        return redirect()->route('show-archivos');
+        return redirect()->route('show-archivo');
     }
     public function render()
     {
