@@ -5,6 +5,7 @@
             <div class="bg-cyan-600 text-white shadow-lg text-center font-bold pt-4 pb-4 w-full rounded-lg mb-10 mt-10">
                 Crear Nuevo Archivo
             </div>
+
             <form class="px-4 border border-gray-300" wire:submit.prevent="save">
                 <div class="container ">
                     <div class="grid grid-cols-1  gap-2">
@@ -55,29 +56,4 @@
 
 </div>
 
-<script>
-    ClassicEditor
-        .create(document.querySelector('#editor'))
-        .then(function(editor) {
-            editor.model.document.on('change:data', () => {
-                @this.set('contenido', editor.getData());
-            })
-        })
-        .catch(error => {
-            console.error(error);
-        });
-</script>
 
-
-<script>
-    ClassicEditor
-        .create(document.querySelector('#editor1'))
-        .then(function(editor1) {
-            editor1.model.document.on('change:data', () => {
-                @this.set('contenido', editor1.getData());
-            })
-        })
-        .catch(error => {
-            console.error(error);
-        });
-</script>
