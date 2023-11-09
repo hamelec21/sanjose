@@ -53,13 +53,13 @@
                                             </td>
 
                                             <td class="py-3 px-6 text-center">
-                                                <div class="flex items-center font-bold">
+                                                <div class="flex items-center font-bold uppercase">
                                                     <span> {{ $norma->titulo }}</span>
                                                 </div>
                                             </td>
 
                                             <td class="py-3 px-6 text-center">
-                                                <div class="flex items-center font-bold">
+                                                <div class="flex items-center font-bold uppercase">
                                                     <span> {{ $norma->tipo_documento }}</span>
                                                 </div>
                                             </td>
@@ -76,10 +76,9 @@
                                                     <div class="flex items-center justify-around py-2 ">
                                                         {{-- boton para llamar el formulario editar <a href="{{route('crear-noticia')}}">sd</a> --}}
 
-                                                        <a href="{{ route('editar-noticia', [$norma->id]) }}">
+                                                        <a href="{{ route('editar-archivo', ['id' => $norma->id]) }}">
                                                             <button class="btn-editar mb-5">Editar</button>
                                                         </a>
-
                                                     </div>
 
 

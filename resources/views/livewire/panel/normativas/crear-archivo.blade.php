@@ -22,6 +22,7 @@
                             <label class="px-4">Titulo Archivo</label>
                             <select wire:model="tipo_documento" class="rounded-lg  flex-1 appearance-none border border-gray-400 w-full py-1 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                                 <option value="">Seleccione</option>
+                                <option value="cuenta publica">Cuenta Publica</option>
                                 <option value="normativa o reglamento">Normativa o Reglamento</option>
                                 <option value="utiles">Útiles Escolares</option>
                             </select>

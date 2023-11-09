@@ -39,6 +39,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     //carga de arvivos
 Route::get('/panel/normativas/show-archivo',\App\Http\Livewire\Panel\Normativas\ShowArchivo::class)->name('show-archivo');
 Route::get('/panel/normativas/crear-archivo',\App\Http\Livewire\Panel\Normativas\CrearArchivo::class)->name('crear-archivo');
+Route::get('/panel/normativas/editar-archivo/{id}',\App\Http\Livewire\Panel\Normativas\EditarArchivo::class)->name('editar-archivo');
  //mostrar todas las noticias
 Route::get('/panel/noticia/show-noticia',\App\Http\Livewire\Panel\Noticia\ShowNoticia::class)->name('show-noticia');
 //crear

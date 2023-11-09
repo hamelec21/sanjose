@@ -12,18 +12,14 @@ class CrearArchivo extends Component
     public $pdfs = [];
     public $titulo, $tipo_documento,$archivo; // variables publicas del formularios
 
-    protected $rules = [
-        'titulo' => 'required|min:10|max:140',
-        'tipo_documento' => 'required',
-        'archivo' => 'required|mimes:pdf|max:10240', // Valida que sea un archivo PDF y su tamaño no sea mayor a 10MB
-    ];
+
 
     public function save()
     {
         $this->validate([
             'titulo' => 'required',
             'tipo_documento' => 'required',
-            'archivo' => 'required|mimes:pdf|max:2048', // Valida que sea un archivo PDF y su tamaño no sea mayor a 2MB
+            'archivo' => 'required|mimes:pdf|max:10240', // Valida que sea un archivo PDF y su tamaño no sea mayor a 5MB
         ]);
 
         $path = $this->archivo->store('pdfs', 'public');
