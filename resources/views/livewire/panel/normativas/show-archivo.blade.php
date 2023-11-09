@@ -11,20 +11,22 @@
                     {{-- seccion de busqueda --}}
 
                     <div class="container mx-auto">
-                        <div class="text-gray-100 text-center mt-10 text-lg font-bold uppercase bg-encabezado py-1">Centro de Carga de Archivos</div>
+                        <div class="text-gray-100 text-center mt-10 text-lg font-bold uppercase bg-encabezado py-1">
+                            Centro de Carga de Archivos</div>
                     </div>
-                      <div class="flex justify-around bg-gray-200">
+                    <div class="flex justify-around bg-gray-200">
 
                         <div class=" text-left text-gray-900 font-bold py-1 text-sm mt-2">
 
-                            <input wire:model.live="search" type="text" name="titulo" id="" placeholder="Busqueda"
+                            <input wire:model.live="search" type="text" name="titulo" id=""
+                                placeholder="Busqueda"
                                 class=" rounded-lg border-transparent flex-1 appearance-none border border-blue-600 w-full py-1 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                             @error('titulo')
                                 <span class="error text-red-600 text-xs">{{ $message }}</span>
                             @enderror
                         </div>
-                        <a href="{{route('crear-archivo')}}">
-                        <button class="btn-agregar mb-5 mt-3">Crear Nueva Archivo</button>
+                        <a href="{{ route('crear-archivo') }}">
+                            <button class="btn-agregar mb-5 mt-3">Crear Nueva Archivo</button>
                         </a>
                     </div>
 
@@ -46,10 +48,8 @@
                                     @foreach ($normas as $norma)
                                         <tr class="border-b border-gray-200 hover:bg-gray-100">
                                             <td class="py-3 px-6 text-center">
-                                                <div class="flex items-center font-bold">
-                                                    <span> {{ $norma->titulo }}</span>
-                                                </div>
-                                                <a href="{{ asset('storage/' . $norma->archivo) }}" class="btn btn-primary" download>Descargar PDF</a>
+                                                <a href="{{ asset('storage/' . $norma->archivo) }}"
+                                                    class="btn btn-primary" download>Descargar PDF</a>
                                             </td>
 
                                             <td class="py-3 px-6 text-center">
@@ -76,9 +76,9 @@
                                                     <div class="flex items-center justify-around py-2 ">
                                                         {{-- boton para llamar el formulario editar <a href="{{route('crear-noticia')}}">sd</a> --}}
 
-                                                        <a href="{{route('editar-noticia',[$norma->id])}}">
+                                                        <a href="{{ route('editar-noticia', [$norma->id]) }}">
                                                             <button class="btn-editar mb-5">Editar</button>
-                                                            </a>
+                                                        </a>
 
                                                     </div>
 
@@ -113,5 +113,3 @@
     </div>
 
 </div>
-
-
