@@ -1,12 +1,11 @@
 <div>
     @livewire('panel.menu.sidebar')
-    @livewire('panel.menu.sidebar')
     <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80] 2xl:w-[85%] ">
         <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80] 2xl:w-[85%] ">
 
             {{-- tabla --}}
             <div class="overflow-x-auto">
-                <div class="mt-10 flex items-center justify-center bg-gray-100 font-sans overflow-hidden">
+                <div class="mt-10 flex  bg-gray-100 font-sans overflow-hidden">
                     <div class="w-full lg:w-5/6">
                         {{-- seccion de busqueda --}}
 
@@ -49,68 +48,70 @@
                                             <tr class="border-b border-gray-200 hover:bg-gray-100">
                                                 <td class="py-3 px-6 text-center">
                                                     <a href="{{ asset('storage/' . $norma->archivo) }}"
-                                                        class="btn btn-primary" download>Descargar PDF</a>
-                                                </td>
+                                                        class="px-4 py-2 bg-blue-500 rounded-xl drop-shadow-lg text-md text-white duration-300 hover:bg-blue-700"
+                                                        download><i class="fa-solid fa-download m-2"></i>PDF</a>
+                         </div>
+                        </td>
 
-                                                <td class="py-3 px-6 text-center">
-                                                    <div class="flex items-center font-bold uppercase">
-                                                        <span> {{ $norma->titulo }}</span>
-                                                    </div>
-                                                </td>
-
-                                                <td class="py-3 px-6 text-center">
-                                                    <div class="flex items-center font-bold uppercase">
-                                                        <span> {{ $norma->tipo_documento }}</span>
-                                                    </div>
-                                                </td>
-
-                                                <td class="py-3 px-6 text-left">
-                                                    <div class="flex items-center">
-                                                        <span> {{ date('d-m-Y', strtotime($norma->created_at)) }}</span>
-                                                    </div>
-                                                </td>
-
-                                                <td class="py-3 px-6 text-center">
-                                                    <div class="flex item-center justify-center">
-
-                                                        <div class="flex items-center justify-around py-2 ">
-                                                            {{-- boton para llamar el formulario editar <a href="{{route('crear-noticia')}}">sd</a> --}}
-
-                                                            <a href="{{ route('editar-archivo', ['id' => $norma->id]) }}">
-                                                                <button class="btn-editar mb-5">Editar</button>
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="mt-2 px-3">
-                                                            <a onclick="confirm('Estas Seguro de Eliminar El Archivo!')||event.stopImmediatePropagation()"
-                                                                wire:click="destroy({{ $norma->id }})"><button
-                                                                    class="btn btn-eliminar ">Eliminar</button> </a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        @endforeach
-
-                                    </tbody>
-                            </table>
-                        @else
-                            @include('components.alerta-busqueda')
-                            @endif
-                            <div class="bg-gray-200">
-                                @if ($normas->hasPages())
-                                    <div class="px-6 py-3 ">
-                                        {{ $normas->links() }}
-                                    </div>
-                                @endif
+                        <td class="py-3 px-6 text-center">
+                            <div class="flex items-center font-bold uppercase">
+                                <span> {{ $norma->titulo }}</span>
                             </div>
+                        </td>
+
+                        <td class="py-3 px-6 text-center">
+                            <div class="flex items-center font-bold uppercase">
+                                <span> {{ $norma->tipo_documento }}</span>
+                            </div>
+                        </td>
+
+                        <td class="py-3 px-6 text-left">
+                            <div class="flex items-center">
+                                <span> {{ date('d-m-Y', strtotime($norma->created_at)) }}</span>
+                            </div>
+                        </td>
+
+                        <td class="py-3 px-6 text-center">
+                            <div class="flex item-center justify-center">
+
+                                <div class="flex items-center justify-around py-2 ">
+                                    {{-- boton para llamar el formulario editar <a href="{{route('crear-noticia')}}">sd</a> --}}
+
+                                    <a href="{{ route('editar-archivo', ['id' => $norma->id]) }}">
+                                        <button class="btn-editar mb-5">Editar</button>
+                                    </a>
+                                </div>
+
+
+                                <div class="mt-2 px-3">
+                                    <a onclick="confirm('Estas Seguro de Eliminar El Archivo!')||event.stopImmediatePropagation()"
+                                        wire:click="destroy({{ $norma->id }})"><button
+                                            class="btn btn-eliminar ">Eliminar</button> </a>
+                                </div>
+                            </div>
+                        </td>
+                        </tr>
+                        @endforeach
+
+                        </tbody>
+                        </table>
+                    @else
+                        @include('components.alerta-busqueda')
+                        @endif
+                        <div class="bg-gray-200">
+                            @if ($normas->hasPages())
+                                <div class="px-6 py-3 ">
+                                    {{ $normas->links() }}
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
     </div>
+</div>
 
 
 
