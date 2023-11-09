@@ -49,6 +49,7 @@
                                                 <div class="flex items-center font-bold">
                                                     <span> {{ $norma->titulo }}</span>
                                                 </div>
+                                                <a href="{{ asset('storage/' . $norma->archivo) }}" class="btn btn-primary" download>Descargar PDF</a>
                                             </td>
 
                                             <td class="py-3 px-6 text-center">
