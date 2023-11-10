@@ -178,6 +178,10 @@ Route::get('/centro_de_alumnos', function () {
     return view('centro_de_alumnos');
 });
 
+Route::get('/centro_de_padres', function () {
+    return view('centro_de_padres');
+});
+
 Route::get('/actividad', function () {
     return view('actividad');
 });
