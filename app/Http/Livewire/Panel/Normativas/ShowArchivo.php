@@ -22,12 +22,6 @@ class ShowArchivo extends Component
         Normativa::destroy($id);
     }
 
-    
-
-
-
-
-
     public function render()
     {
         $normas = Normativa::buscar($this->search)
