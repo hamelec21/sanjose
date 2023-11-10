@@ -11,7 +11,6 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
          <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/all.min.css') }}">
-
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://cdn.ckeditor.com/ckeditor5/36.0.0/classic/ckeditor.js"></script>
         <!-- Scripts -->
@@ -86,5 +85,6 @@
 
 
         @yield('js')
+
     </body>
 </html>
