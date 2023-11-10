@@ -44,7 +44,7 @@
                 </div>
             </a>
             <a href="/cuenta-publica">
-                <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-calendario">
+                <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-cuenta-publica">
                     <div class=" text-white text-lg font-bold">Cuenta Pública</div>
                 </div>
         </div>
