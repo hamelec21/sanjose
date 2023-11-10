@@ -40,10 +40,11 @@
             <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-recursos">
                 <div class=" text-white text-lg font-bold">Recursos</div>
             </div>
-
+            <a href="/normativas">
             <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-normas">
                 <div class=" text-white text-lg font-bold">Normativas y Reglamentos</div>
             </div>
+        </a>
 
             <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-calendario">
                 <div class=" text-white text-lg font-bold">Calendario de Actividades</div>

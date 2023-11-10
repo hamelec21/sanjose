@@ -50,7 +50,7 @@
                                                     <a href="{{ asset('storage/' . $norma->archivo) }}"
                                                         class="px-4 py-2 bg-blue-500 rounded-xl drop-shadow-lg text-md text-white duration-300 hover:bg-blue-700"
                                                         download><i class="fa-solid fa-download m-2"></i>PDF</a>
-                         </div>
+                        </div>
                         </td>
 
                         <td class="py-3 px-6 text-center">
