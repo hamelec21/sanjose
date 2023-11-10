@@ -223,6 +223,14 @@ Route::get('/normativas', function () {
     return view('normativas');
 });
 
+Route::get('/cuenta-publica', function () {
+    return view('cuenta-publica');
+});
+
+Route::get('/utiles-escolares', function () {
+    return view('utiles-escolares');
+});
+
 
 
 

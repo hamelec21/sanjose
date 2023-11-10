@@ -33,19 +33,22 @@
     <div class="container mx-auto px-2 mt-5 ">
 
         <div class="grid grid-col-1 lg:grid-cols-3 gap-4">
-            <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-utiles">
-                <div class=" text-white text-lg font-bold">Lista de Utiles Escolares 2024</div>
-            </div>
+            <a href="/utiles-escolares">
+                <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-utiles">
+                    <div class=" text-white text-lg font-bold">Lista de Utiles Escolares 2024</div>
+                </div>
+            </a>
             <a href="/normativas">
-            <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-normas">
-                <div class=" text-white text-lg font-bold">Normativas y Reglamentos</div>
-            </div>
-        </a>
-
-            <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-calendario">
-                <div class=" text-white text-lg font-bold">Calendario de Actividades</div>
-            </div>
+                <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-normas">
+                    <div class=" text-white text-lg font-bold">Normativas y Reglamentos</div>
+                </div>
+            </a>
+            <a href="/cuenta-publica">
+                <div class="bg-gray-400 shadow-lg h-48 rounded-lg flex justify-center items-center card-calendario">
+                    <div class=" text-white text-lg font-bold">Cuenta Pública</div>
+                </div>
         </div>
+        </a>
     </div>
 
 

@@ -16,7 +16,9 @@ class ShowNormativas extends Component
     }
     public function render()
     {
-        $normativas =Normativa::where('tipo_documento','normativa o reglamento')->get();
+        $normativas =Normativa::where('tipo_documento','normativa o reglamento')
+        ->orderBy('id','Desc')
+        ->get();
        // dd($normativas);
         return view('livewire.front.show-normativas',compact('normativas'));
     }
