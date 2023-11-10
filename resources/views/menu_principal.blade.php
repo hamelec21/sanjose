@@ -138,7 +138,7 @@
                       <a href="/centro_de_alumnos" class="block px-4 py-2 hover:bg-red-800 text-gray-800 hover:text-white">Centro de Alumnos</a>
                     </li>
                     <li>
-                        <a href="/centro_de_padres" class="block px-4 py-2 hover:bg-red-800 text-gray-800 hover:text-white">Centro de Alumnos</a>
+                        <a href="/centro_de_padres" class="block px-4 py-2 hover:bg-red-800 text-gray-800 hover:text-white">Centro de Padres y Apoderados</a>
                       </li>
                     {{--
                     <li>
