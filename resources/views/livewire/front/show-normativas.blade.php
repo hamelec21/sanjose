@@ -2,7 +2,7 @@
 
     <!--inicio de Contenido page-->
     <div class="container mx-auto">
-        <h1 class="text-3xl text-center mt-10 mb-10 font-bold uppercase text-red-900">Reglamentos y Normativas</h1>
+        <h1 class="text-3xl text-center mt-10 mb-10 font-bold uppercase text-red-900">Normativas y Reglamentos</h1>
     </div>
     <!-- component -->
     <div class=" mx-auto lg:max-w-7xl mt-3 ">
