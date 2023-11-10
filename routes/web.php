@@ -219,7 +219,9 @@ Route::get('/personal_de_servicio', function () {
 
 //rutas centro descargas de normativas  y utiles escolares
 
-
+Route::get('/normativas', function () {
+    return view('normativas');
+});
 
 
 
